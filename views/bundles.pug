@@ -1,0 +1,18 @@
+html
+    head
+        link(rel='stylesheet', href='http://localhost:3000/bundles.css')
+        title Bundles
+body(id = "body")
+    include ./partials/header
+    h1#topText Bundle Shop 
+    div#search 
+        select(id="choice") 
+        input#userInput(type="textbox", placeholder= "Search...") 
+    br
+    div#button
+        button#refresh(type="button", class = "btn"): span(class="text") Search
+    script(src="/js/client.js")
+    br
+    div#results
+
+    

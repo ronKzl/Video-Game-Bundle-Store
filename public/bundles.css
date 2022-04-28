@@ -1,0 +1,95 @@
+html,body{
+    height: 100%;
+    width:100%;
+    margin: 0;
+    font-family: serif;
+    font-size: 120%;
+    background-color: rgb(240, 240, 240);
+    justify-content: center;
+}
+
+#search{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#button{
+   
+    height: 50px;
+    display: flex;
+    justify-content: center;
+
+}
+
+#topText{
+    text-align: center;
+}
+
+#results{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.boxes{
+    display:inline-bl;
+    margin: auto;
+    width: 60%;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#userInput{
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 24px;
+}
+a:visited { 
+    text-decoration: none; 
+    color: blue; 
+   }
+
+.btn {
+  align-items: center;
+  background-image: linear-gradient(144deg,#6e0808, #bd3838 50%,#ff0202);
+  border: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  padding: 0px;
+  text-decoration: none;
+  touch-action: manipulation;
+  cursor: pointer;
+}
+
+.btn:active,
+.btn:hover {
+  outline: 0;
+}
+
+.btn span {
+  display: flex;
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 38%;
+  transition: 300ms;
+}
+
+.btn:hover span {
+  background: none;
+}
+
+
+
+
+

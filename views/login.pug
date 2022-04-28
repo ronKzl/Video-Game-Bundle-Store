@@ -1,0 +1,16 @@
+html
+    head
+        link(rel='stylesheet', href='http://localhost:3000/generic.css')
+        title Login Page
+body
+    include ./partials/header
+    if(error)
+        p You have entered inccorect or wrong credentials please try again
+    div#main
+        form(action='/login', method='POST')
+            p
+                |username: 
+                input(type='text', name='username')
+                |password: 
+                input(type='password', name='password')
+            input(type='submit', value='Login')

@@ -1,0 +1,15 @@
+html
+    head
+        link(rel='stylesheet', href='http://localhost:3000/bundle.css')
+        title User
+    body 
+        include ./partials/header
+        div#main
+            h3 username: #{results[0].name}  
+            h4 address: #{results[0].address} 
+            h4 email: #{results[0].email}  
+            h2 Orders this user has made: 
+                ul
+                    each row in results 
+                        li: a(href="/bundle/" + row.bundleId) #{row.bundle_title} 
+                        h4 bundle costed $#{row.price} was purchased on #{row.orderDate}

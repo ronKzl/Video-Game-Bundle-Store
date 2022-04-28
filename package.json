@@ -1,0 +1,18 @@
+{
+  "name": "a5-code",
+  "version": "1.0.0",
+  "description": "3005 Final Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Ron Stuchevsky",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-session": "^1.17.2",
+    "pug": "^3.0.2",
+    "sqlite3": "^5.0.2"
+  }
+}

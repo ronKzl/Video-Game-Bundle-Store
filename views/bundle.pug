@@ -1,0 +1,17 @@
+html
+    head
+        link(rel='stylesheet', href='http://localhost:3000/bundle.css')
+        title Bundle
+body
+    include ./partials/header
+    div#main
+        each game in bundleGames 
+            h4 Game: #{game.game_title} 
+            h4 Genre: #{game.genre}
+            h4 Release Date: #{game.game_date} 
+            h4 Publisher:  #{game.publisher}
+            h4 Platform:  #{game.platform}
+            h4 Score: #{game.score}
+            br
+            
+           

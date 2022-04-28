@@ -1,0 +1,20 @@
+html
+    head
+        link(rel='stylesheet', href='http://localhost:3000/generic.css')
+        title Register Page
+body
+    include ./partials/header
+    if(noInput)
+        p You need to fill in the fields try again
+    div#main
+        form(action='/register', method='POST')
+            p
+                |username: 
+                input(type='text', name='username')
+                |password: 
+                input(type='password', name='password')
+                |address
+                input(type='address', name='address')
+                |email
+                input(type='email', name='email')
+            input(type='submit', value='Register')
